@@ -1,4 +1,4 @@
-# Next.js [QOSIC](https://www.qosic.com/online-payment) Pay Integration Demo
+# Next.js [QOSIC](https://www.qosic.com/online-payment) Pay Integration Demo (WIP)
 
 This repository demonstrates how to integrate QOSIC Pay (🇹🇬) into a Next.js 14 application. It covers the following features:
 
