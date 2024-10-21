@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js [QOSIC](https://www.qosic.com/online-payment) Pay Integration Demo
 
-## Getting Started
+This repository demonstrates how to integrate QOSIC Pay (🇹🇬) into a Next.js 14 application. It covers the following features:
 
-First, run the development server:
+- Initiating payments via Moov Money (Flooz) and T-money.
+- Handling payment confirmations through SMS or USSD.
+- Receiving callbacks from QOSIC for payment status updates.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Prerequisites
+
+- Node.js (v18+)
+- Next.js (v14)
+- QOSIC API credentials (ClientID, username, password)
+
+## Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/gausoft/next-ts-qosic-pay.git
+    cd next-ts-qosic-pay
+    ```
+2. Install dependencies:
+    ```bash
+    npm i
+    ```
+3. Create a `.env.local` file in the root of the project and configure your QOSIC API credentials:
+    ```bash
+    QOSIC_BASE_URL="https://api.qosic.net"
+
+    QOSIC_CLIENTID="YOUR_CLIENT_ID"
+    QOSIC_ACC_USERNAME="YOUR_CLIENT_USERNAME"
+    QOSIC_ACC_PASSWORD="YOUR_CLIENT_PASSWORD"
+    ```
+4. Running the Project
+    ```bash
+    npm run dev
+    ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+This project is licensed under the MIT License.
