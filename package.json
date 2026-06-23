@@ -13,7 +13,7 @@
     "next-swagger-doc": "^0.4.0",
     "react": "^18",
     "react-dom": "^18",
-    "swagger-ui-react": "^5.17.14"
+    "swagger-ui-react": "^5.32.7"
   },
   "devDependencies": {
     "@types/node": "^20",
